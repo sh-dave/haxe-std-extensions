@@ -1,7 +1,6 @@
-# haxe-std-extensions
+# haxe-std-extensions [![License: Zlib](https://img.shields.io/badge/License-Zlib-green.svg)](https://opensource.org/licenses/Zlib)
 
 Just some extensions i'm sick of writing over and over.
-
 
 ## Array
 
