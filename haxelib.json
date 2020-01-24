@@ -1,0 +1,6 @@
+{
+	"name": "haxe-std-extensions",
+	"url": "https://github.com/sh-dave/haxe-std-extensions",
+	"classPath": "src",
+	"license": "zlib"
+}
