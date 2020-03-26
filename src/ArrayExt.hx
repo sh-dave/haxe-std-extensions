@@ -34,4 +34,12 @@ class ArrayExt {
 		a[i] = a[j];
 		a[j] = tmp;
 	}
+
+	/**
+	 * Returns the last element of `a` or `null` if the array is empty.
+	 */
+	public static function last<T>( a: Array<T> ) : Null<T> {
+		final l = a.length;
+		return l != 0 ? a[l - 1] : null;
+	}
 }
