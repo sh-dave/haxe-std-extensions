@@ -9,12 +9,16 @@ class MathExt {
         return value < min ? min : value > max ? max : value;
     }
 
+	static final DegToRad = Math.PI / 180;
+
 	public static inline function deg2rad( degrees: Float) : Float {
-		return degrees * 0.0174532924;
+		return degrees * DegToRad; // 0.0174532924;
 	}
 
+	static final RadToDeg = 180 / Math.PI;
+
 	public static inline function rad2deg( radians: Float ) : Float {
-		return radians * 57.29578;
+		return radians * RadToDeg; // 57.29578;
 	}
 
     public static inline function sign( number: Float ) : Int {
@@ -31,5 +35,9 @@ class MathExt {
 		final range = max - min;
 		final value = (min + ((((value - min) % range) + range) % range));
 		return value;
+	}
+
+	public static inline function distanceSquared( ax: Float, ay: Float, bx: Float, by: Float ) {
+		return (ax - bx) * (ax - bx) + (ay - by) * (ay - by);
 	}
 }
