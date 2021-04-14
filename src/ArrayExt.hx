@@ -7,6 +7,12 @@ class ArrayExt {
 		a.splice(0, a.length);
 	}
 
+	public static inline function fill<T>( a: Array<T>, value: T ) {
+		for (i in 0...a.length) {
+			a[i] = value;
+		}
+	}
+
 	/**
 	 * Returns the first index of `a` for which `f` is true.
 	 *
